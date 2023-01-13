@@ -1,0 +1,24 @@
+.footer{
+    margin: 10px 0 0 0;
+    background: $green;
+    @include responsive(765px){
+        display: none;
+    }
+
+&__content{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+&__links{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+    li{
+        padding: 0 15px;
+    }
+}
+}

@@ -1,0 +1,58 @@
+.show{
+    width: 100%;
+    height: 500px;
+    @include bgimage('/assets/hero.jpg');
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    @include flexVerticle;
+    color: $white;
+
+    &__content h1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    &__card {
+        position: absolute;
+        bottom: -220px;
+        width: 470px;
+        padding: 80px 40px;
+        background: $green;
+        right: 0;
+        color: $black;
+        @include responsive(765px){
+            bottom: -360px;
+            width: 400px;
+            padding: 30px 30px;
+        }
+        &-h6{
+            color: #0c0f16;
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+        
+        &-h4{
+            font-size: 30px;
+            color:$black;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        &-text{
+            color: $black;
+            font-size: 17px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            font-weight: 300;
+            @include responsive(765px) {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+}

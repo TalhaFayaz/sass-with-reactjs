@@ -1,0 +1,29 @@
+@mixin bgimage($image){
+    background: url($image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+@mixin flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexVerticle{
+    display: flex;
+    align-items: center;
+}
+
+@mixin bd-radius  {
+    border-radius: 5px;
+}
+
+@mixin responsive($width) {
+        @media (max-width:$width) {
+            @content ;
+        }
+}
+

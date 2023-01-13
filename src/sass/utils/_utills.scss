@@ -1,0 +1,39 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    @include responsive(765px){
+        width: 100%;
+        padding: 0 10px;
+    } 
+}
+
+//  on-scroll nav add class whiteBg
+.whiteBg {
+    background: $white;
+    & li{
+        color: $black !important;
+    }
+}
+
+.transparent {
+    background: transparent;
+
+    li{
+        color:  $white !important;
+    }
+}
+
+.rel {
+    position: relative;
+}
+
+.pl-15{
+    padding-left: 15px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+
+

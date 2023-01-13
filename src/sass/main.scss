@@ -1,0 +1,25 @@
+@import './base/base';
+
+// import abstacts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+// import utills
+@import './utils/utills';
+
+
+// import layouts
+@import './layouts/grid';
+
+// import components syles 
+@import './components/header';
+@import './components/navbar';
+@import './components/about';
+@import './components/showcase';
+@import './components/portfolio';
+@import './components/footer';
+
+
+
+
+

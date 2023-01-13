@@ -1,0 +1,21 @@
+@for $i from 1 through $column {
+    .col-#{$i} {
+        flex: 0 0 (100% / 12 ) * $i;
+        width: (100% / 12 ) * $i;
+        max-width: (100% / 2 ) * $i;
+    }
+
+    @include responsive(765px) {
+        .col-#{$i} {
+            flex: 0 0 100%;
+            width: 100%;
+            padding: 10px 10px;
+        }
+    }
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
